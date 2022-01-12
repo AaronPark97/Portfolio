@@ -65,7 +65,7 @@
 
 
     <!-- about -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia asperiores dolores
             iste cum repudiandae atque culpa? Sequi consectetur voluptates pariatur alias, accusantium illo cumque non
@@ -165,108 +165,110 @@
 
     <!-- skills -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo id quisquam ut inventore, incidunt
-            nam repellat beatae iste minus ipsa, mollitia quasi a tempore est. Id cum cumque quasi!</p>
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo id quisquam ut inventore,
+                incidunt
+                nam repellat beatae iste minus ipsa, mollitia quasi a tempore est. Id cum cumque quasi!</p>
 
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <!-- html skill -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <!-- html skill -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%;"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <!-- CSS skill -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                </div>
-                <!-- CSS skill -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
+                    <!-- javaScript skill -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <!-- C# -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                </div>
-                <!-- javaScript skill -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <!-- C# -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
 
-                <!-- Java# -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
+                    <!-- Java# -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+
+                    <!-- SQL# -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- SQL# -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Visual Studio 2022</span></li>
-                        <li><span>Eclipse</span></li>
-                        <li><span>MySql</span></li>
-                        <li><span>Sublime Text</span></li>
-
-
-                    </ul>
-                </div>
-                <div class="Etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>Agile</span></li>
-                        <li><span>Lean Process</span></li>
-                    </ul>
 
 
                 </div>
+
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Visual Studio 2022</span></li>
+                            <li><span>Eclipse</span></li>
+                            <li><span>MySql</span></li>
+                            <li><span>Sublime Text</span></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>Agile</span></li>
+                            <li><span>Lean Process</span></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-
     </section>
 
 
