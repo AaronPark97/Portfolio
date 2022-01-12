@@ -22,63 +22,66 @@
 <body>
 
 
-
-
-    <!-- Navbar -->
-    <nav id="navbar">
-        <!-- Logo -->
-        <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
-            <!-- <img class="logo" src=imgs/favicon.png width=100px height=100px> -->
-            <a href="#">Aaron</a>
-        </div>
-        <!-- menu -->
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Testimonial</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
-
-
-
-    </nav>
+    <!-- just for background -->
+    <div class="navbar__home">
+        <!-- Navbar -->
+        <nav id="navbar">
+            <!-- Logo -->
+            <div class="navbar__logo">
+                <i class="fab fa-diaspora"></i>
+                <!-- <img class="logo" src=imgs/favicon.png width=100px height=100px> -->
+                <a href="#">Aaron</a>
+            </div>
+            <!-- menu -->
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">My work</li>
+                <li class="navbar__menu__item">Testimonial</li>
+                <li class="navbar__menu__item">Contact</li>
+            </ul>
 
 
 
+        </nav>
 
-    <!-- section -->
 
-    <!-- home -->
-    <section id="home">
-        <img src="" alt="Aaron's profile Photo" class="home__avatar">
 
-        <h1 class="home__title">Hello, <br> I'm Aaron Park
-        </h1>
-        <h2 class="home__description">A recent graduate from UGA currently residing in Duluth, Georgia.</h2>
-        <button class="home__contact">Contact Me</button>
-    </section>
+
+        <!-- section -->
+
+        <!-- home -->
+        <section id="home">
+            <img src="imgs/profile.jpg" alt="Aaron's profile Photo" class="home__avatar">
+
+            <h1 class="home__title">Hello, <br> I'm Aaron Park
+            </h1>
+            <h2 class="home__description">A recent graduate from UGA currently residing in Duluth, Georgia.</h2>
+            <button class="home__contact">Contact Me</button>
+        </section>
+
+    </div>
+
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia asperiores dolores
             iste cum repudiandae atque culpa? Sequi consectetur voluptates pariatur alias, accusantium illo cumque non
             suscipit placeat fugiat quas quidem.</p>
 
 
-        <div class="about_majors">
+        <div class="about__majors">
             <!-- first major -->
             <div class="major">
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
 
-                <div class="major__title">
+                <h2 class="major__title">
                     Front-End
-                </div>
+                </h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript
                 </div>
@@ -90,9 +93,9 @@
                 <div class="major__icon">
                     <i class="fas fa-server"></i>
                 </div>
-                <div class="major__title">
+                <h2 class="major__title">
                     Back-End
-                </div>
+                </h2>
                 <div class="major__description">
                     SQL, Java
                 </div>
@@ -105,9 +108,9 @@
                     <i class="fas fa-laptop-code"></i>
                 </div>
 
-                <div class="major__title">
+                <h2 class="major__title">
                     Others
-                </div>
+                </h2>
                 <div class="major__description">
                     C#
                 </div>
@@ -120,15 +123,19 @@
         <div class="about__jobs">
             <P> Work Experience</P>
             <div class="job">
-                <img src="" alt="" class="job_logo">
-                <p class="job_name"></p>
-                <p class="job_period"></p>
+                <img src="" alt="" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name"> Currently working at Aprio</p>
+                    <p class="job__period">2020 Sept - 2021 Oct</p>
+                </div>
             </div>
 
             <div class="job">
-                <img src="" alt="" class="job_logo">
-                <p class="job_name"></p>
-                <p class="job_period"></p>
+                <img src="" alt="" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name"></p>
+                    <p class="job__period"></p>
+                </div>
             </div>
         </div>
 
@@ -136,14 +143,18 @@
             <P> Education </P>
             <div class="job">
                 <img src="" alt="" class="job_logo">
-                <p class="job_name"></p>
-                <p class="job_period"></p>
+                <div class="job__description">
+                    <p class="job__name"></p>
+                    <p class="job__period"></p>
+                </div>
             </div>
 
             <div class="job">
-                <img src="" alt="" class="job_logo">
-                <p class="job_name"></p>
-                <p class="job_period"></p>
+                <img src="" alt="" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name"></p>
+                    <p class="job__period"></p>
+                </div>
             </div>
         </div>
 
@@ -153,7 +164,7 @@
 
 
     <!-- skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo id quisquam ut inventore, incidunt
@@ -262,7 +273,7 @@
 
 
     <!-- work -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h2>Projects</h2>
 
@@ -292,7 +303,7 @@
 
 
     <!-- testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1> Testimonials</h1>
         <h3>See why they say about me</h3>
 
@@ -332,7 +343,7 @@
 
 
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">
             Let's talk!
         </h1>
