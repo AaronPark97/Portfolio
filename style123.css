@@ -81,14 +81,14 @@ h2 {
 
 h3 {
   font-size: var(--font-regular);
-  font-weight: var(--weight-regular);
+  font-weight: var(--font-regular);
   color: var(--color-black);
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
-  font-weight: var(--weight-regular);
+  font-weight: var(--font-regular);
   color: var(--color-black);
   margin: 4px 0;
 }
@@ -119,7 +119,6 @@ p {
 
 .navbar__menu {
   display: flex;
-  margin: 0;
 }
 
 .navbar__menu__item {
@@ -127,15 +126,13 @@ p {
   margin: 0 4px;
   color: var(--color-white);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
+  /* background-color: var(--color-dark-pink); */
   background-color: var(--color-dark-grey);
 }
 
@@ -150,7 +147,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/background.png") center/cover no-repeat;
+  background: url('imgs/background.png') center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -178,9 +175,12 @@ p {
   border-radius: var(--size-border-radius);
 }
 
-.home__contact:hover {
+.home__contact:hover{
   background-color: var(--color-orange);
 }
+
+
+
 /* Section common */
 .section {
   padding: 50px;
@@ -266,6 +266,8 @@ p {
 }
 
 
+
+
 /* Skill */
 
 #skills {
@@ -335,7 +337,6 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
-  position: relative;
 }
 
 .category__btn.selected,
@@ -358,9 +359,9 @@ p {
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  position: absolute;
+  position: relative;
   top: -20px;
-  right: 16px;
+  left: 4px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -526,20 +527,18 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+
   :root {
     /* Font size */
-    --font-large: 30px;
-    --font-medium: 18px;
-    --font-regular: 16px;
-    --font-small: 14px;
-    --font-micro: 12px;
+  --font-large: 30px;
+  --font-medium: 18px;
+  --font-regular: 16px;
+  --font-small: 14px;
+  --font-micro: 12px;
   }
 
   .navbar__toggle-btn {
     display: block;
-    top: 16px;
-    right: 16px;
-    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -562,9 +561,8 @@ p {
     display: block;
   }
 
-  .section {
+  .section{
     padding: 16px;
-    padding-top: 40px;
   }
 
   .about__majors {
@@ -581,41 +579,16 @@ p {
     flex-direction: column;
   }
 
-  .category__btn {
-    margin: 4px 0;
-    width: 100%;
+  .category__btn{
+    padding: 8px;
   }
 
   .project {
     flex-grow: 1;
   }
 
-  .testimonial {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .testimonial__avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-  .testimonial__avatar:nth-child(even),
-  .testimonial__avatar:nth-child(odd) {
-    margin: 0;
-    margin-bottom: 8px;
-  }
-
-  .testimonial__speech-bubble {
-    order: 1;
-  }
-
-  .arrow-up {
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 50px;
-    right: 16px;
-    bottom: 16px;
+    width: 80px;
+    height: 80px;
   }
 }
